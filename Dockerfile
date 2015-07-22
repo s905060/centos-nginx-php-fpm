@@ -1,5 +1,5 @@
 ############################################################
-# Dockerfile to build CentOS,Nginx installed  Container
+# Dockerfile to build CentOS,Nginx,PHP-fpm installed  Container
 # Based on CentOS
 ############################################################
 
