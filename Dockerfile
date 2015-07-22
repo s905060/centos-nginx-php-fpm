@@ -45,5 +45,5 @@ ADD index.php /var/www/index.php
 EXPOSE 80
 EXPOSE 443
 
-# Executing supervisord  (-n, --nodaemon	Run supervisord in the foreground.)
+# Executing supervisord  (-n, --nodaemon Run supervisord in the foreground.)
 CMD /usr/bin/supervisord -c /etc/supervisord.conf
