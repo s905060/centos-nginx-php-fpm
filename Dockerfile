@@ -41,6 +41,9 @@ ADD supervisord.conf /etc/
 # Adding the default file
 ADD index.php /var/www/index.php
 
+# Setup Volume
+VOLUME ["/var/www/", "/etc/nginx/conf.d/"]
+
 # Set the port to 80 && 443
 EXPOSE 80
 EXPOSE 443
