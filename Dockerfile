@@ -3,7 +3,7 @@
 # Based on CentOS
 ############################################################
 
-# Set the base image to Centos
+# Set the base image to CentOS
 FROM centos:centos6
 
 # File Author / Maintainer
