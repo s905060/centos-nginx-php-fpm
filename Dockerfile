@@ -20,7 +20,7 @@ RUN yum -y install epel-release
 
 # Install Nginx and php-fpm
 RUN yum install -y wget nginx php-fpm php-common php-mysql php-cli php-ldap php-mbstring \
-                        php-gd php-pdo php-xml php-soap
+php-gd php-pdo php-xml php-soap vim
 
 # Installing supervisor (watch dog)
 RUN wget https://svn.apache.org/repos/asf/oodt/tools/oodtsite.publisher/trunk/distribute_setup.py
