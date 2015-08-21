@@ -14,12 +14,13 @@ RUN yum update -y >/dev/null
 
 # Install epel repos
 RUN rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+RUN rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 
 # Installing epel
 RUN yum -y install epel-release
 
 # Install Nginx and php-fpm
-RUN yum install -y wget nginx php-fpm php-common php-mysql php-cli php-ldap php-mbstring \
+RUN yum --enablerepo=remi install -y wget nginx php-fpm php-common php-mysql php-cli php-ldap php-mbstring \
 php-gd php-pdo php-xml php-soap vim
 
 # Installing supervisor (watch dog)
