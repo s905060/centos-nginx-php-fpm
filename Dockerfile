@@ -19,9 +19,9 @@ RUN rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 # Installing epel
 RUN yum -y install epel-release
 
-# Install Nginx and php-fpm
+# Install Nginx and php-fpm and useful tool
 RUN yum --enablerepo=remi install -y wget nginx php-fpm php-common php-mysql php-cli php-ldap php-mbstring \
-php-gd php-pdo php-xml php-soap vim
+php-gd php-pdo php-xml php-soap vim java
 
 # Installing supervisor (watch dog)
 RUN wget https://svn.apache.org/repos/asf/oodt/tools/oodtsite.publisher/trunk/distribute_setup.py
